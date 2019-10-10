@@ -1,9 +1,50 @@
 <html>
-<head>
-    <title>Nosso Blog</title>
-</head>
-
-<body>
-    <h1> Pagina Inicial </h1>
-</body>
+	<head>
+		<meta charset = "UTF-8"/>
+		<title> DOESE </title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='_imagens/livro3.png')}}" >
+		<script src="{{ url_for('static', filename='_javascript.js')}}"></script>
+		<link  type="text/css" rel="stylesheet" href="{{ url_for('static', filename='_css.css')}}"/>
+	</head>
+	
+	<body>
+		<div id="cabecalho">
+			<h1 id="tes"> DOESE </h1>
+			<a href ="index.html" ></a>
+		</div>
+		
+		<div id="conteudo">
+			<img src = "{{ url_for('static', filename='_imagens/kids2q.jpg')}}" id="kids"/>
+		</div>
+		
+		<div id="menu" align="center" >
+		</br>
+		<a href ="_cadastre-se/cadastre-se.html"><img src = "{{ url_for('static', filename='_imagens/doar.png')}}"/></a>
+		<a href ="_cadastre-se/cadastre-se.html"><img src = "{{ url_for('static', filename='_imagens/pedirdoacao.png')}}"/></a>
+		<a href ="_cadastre-se/cadastre-se.html"><img src = "{{ url_for('static', filename='_imagens/cadastro.png')}}"/></a>
+		<a href ="_informacoes/_informacoes.html" ><img src = "{{ url_for('static', filename='_imagens/informacoes.png')}}"/></a>
+		</div>
+		
+		</br>
+		</br>
+		<hr>
+		</br>
+		</br>
+		
+		
+		<div id="texto" align="center">
+			<h2> O DOESE </h2>
+			<p> O DOESE nasceu de um projeto para o desenvolvimento de um sistema WEB. Nossa ideia é, basicamente, conseguir doações de materias, principalmente livros, para escolas e instituições de ensino infatil. </br> Sabemos que tem muita criança que precisa receber tais materiais, assim como há muitas pessoas de bom coração para doar e, assim, iluminar o sorriso de uma criança por aí. </p>
+			</br>
+			</br>
+			<hr>
+			
+		</div>
+		</br>
+		<div id= "rodape">
+				<center><p> DOESE.com.br </br> Redes sociais: @odoese | E-mail: doese@gmail.com </br> Desenvolvido por: </br> Jade - jbeatriz.borborema12@gmail.com </br> Emanuelly - manualves2507@gmail.com </br> 2019 </p> <center>
+		</div>
+	</body>
 </html>
+
+<!-- Somos uma organização que voluntariamente criou este site afim de encontrar pessoas com o espírito solidário para ajudar diversas escolas com doações. </br> Aqui você escolherá qual institução ajudar, e de qualquer forma que puder. Doações de alimentos, jogos, produtos de limpeza, peças de roupa e, principalmente livros, tudo é aceito. H1: <a href ="../index.html" ><img src = "../_imagens/tit.png"/></a> --!> 
