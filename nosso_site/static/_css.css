@@ -1,0 +1,68 @@
+h1{
+	text-align: center;
+	font-family: Century Gothic;
+	font-size: 30;
+}
+body{
+	font-family: Century Gothic;
+}
+input{
+	border-radius: 5px;
+	border: none;
+	border-bottom: 2px solid grey;
+	color: grey;
+}
+
+#cabecalho{
+	height: 15%;
+	width: 100%;
+	
+}
+
+#conteudo{
+	
+}
+
+#menu{
+	height: 10%;
+	width: 100%;
+	font-family: Century Gothic;
+	font-size: 30;
+}
+
+.bordinha{
+	border: 3px solid;
+	width: 50%;
+	background-color: grey; 
+}
+
+#kids{
+	height: 75%;
+	width: 100%;
+	
+}
+#info{
+	 background-image: url("kids.jpg");
+}
+
+#texto{
+	margin-left: 5px;
+}
+
+#rodape{
+	height: 10%;
+	width: 100%;
+	clear: both;
+	color: lightgrey;
+	
+}
+.ei{
+	text-align: center;
+	font-family: Century Gothic; 
+}
+
+#tes{
+	font-family: Century Gothic;
+	font-size:100;
+	text-align: left;
+}
