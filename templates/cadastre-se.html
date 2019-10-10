@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<meta charset = "UTF-8"/>
+		<title> Cadastre-se </title>
+		<link  type="text/css" rel="stylesheet" href="../_css/_css.css" />
+		<script src = "../_javascript/_javascript.js"></script>
+		<link rel="shortcut icon" href="../_imagens/livro3.png" >
+		
+		
+	</head>
+	<body>
+		<div id="cabecalho">
+			<a href ="../index.html" ><img src = "../_imagens/tit.png"/></a>
+		</div>
+		<h1> Cadastre-se </h1>
+			<center>
+			<div class="bordinha">
+			<div>
+				<form name="form" method="post" action="../index.html" onSubmit="return validacao()">            
+					<h3> Insira aqui seus dados: </h3>
+					<table> 
+					<tr> <td> <label> Usuário: </label> </td> <td> <input  type="text" name="nome" /> </td> </tr>
+					<tr> <td> Sobrenome:</td> <td> <input type="text" name="sobrenome"/> </td> </tr>
+					<tr> <td> Idade:</td> <td> <input type="number" name="idade"/> </td> </tr>
+					<tr> <td> <label> E-mail: </label> </td> <td> <input  type="email" name="email" /> </td> </tr> 
+					<tr> <td> <label> Senha: </label> </td> <td> <input  type="password" name="senha" /> </td> </tr>
+					<tr><td> </br> <b> Endereço </b> </td></tr>
+					<tr> <td> Rua:</td> <td> <input type="text" name="rua"/> </td> </tr>
+					<tr> <td> Número:</td> <td> <input type="number" name="numero"/> </td> </tr>
+					<tr> <td> Bairro:</td> <td> <input type="text" name="bairro"/> </td> </tr>
+					<tr> <td> CEP:</td> <td> <input type="number" name="cep"/> </td> </tr>
+					</table> 
+					<input type="submit" value="Cadastrar"/>
+				</form>
+				</div>
+			</div>
+			</center>
+			</br>
+			<p class="ei"> Já é cadastrado? Faça <a href ="../_login/_login.html">login.</a> </p>
+		</body>
+	</html >
