@@ -15,25 +15,25 @@ class Usuario(db.Model):
         return "<User %r>" % self.username
 
 
-@app.route("/")
-@app.route("/index")
-@app.route("/inicio")
+@app.route('/')
+@app.route('/index')
+@app.route('/inicio')
 def index():
-    return render_template("index.html")
+    return render_template('index.html')
 
-@app.route("/cadastro")
+@app.route('/cadastro')
 def cadastro():
-	return render_template("cadastre-se.html")
+	return render_template('cadastre-se.html')
 
-@app.route("/login")
-@app.route("/entrar")
+@app.route('/login')
+@app.route('/entrar')
 def login():
-	return render_template("login.html")
+	return render_template('login.html')
 
-@app.route("/informacoes")
+@app.route('/informacoes')
 def informacoes():
-	return render_template("_informacoes.html")
+	return render_template('_informacoes.html')
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True)
