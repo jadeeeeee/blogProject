@@ -1,4 +1,5 @@
 function validacao(){
+			
 			if (document.form.nome.value == ""){
 				alert("Insira seu nome por favor.");
 				document.form.nome.focus();

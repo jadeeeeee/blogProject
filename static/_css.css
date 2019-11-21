@@ -3,9 +3,16 @@ h1{
 	font-family: Century Gothic;
 	font-size: 30;
 }
+
+@font-face {
+	font-family: Alata;
+	src: url('Alata-Regular.ttf');
+}
+
 body{
 	font-family: Century Gothic;
 }
+
 input{
 	border-radius: 5px;
 	border: none;
@@ -13,14 +20,24 @@ input{
 	color: grey;
 }
 
+.links {
+	font-family: Alata;
+	text-decoration: none;
+	color: #000000;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 35px;
+	font-weight: 10;
+}
+#titulo_sobre {
+	font-family: Alata;
+	font-weight: 10;
+	font-size: 30px;
+}
+
 #cabecalho{
 	height: 15%;
 	width: 100%;
-	
-}
-
-#conteudo{
-	
 }
 
 #menu{
@@ -41,8 +58,9 @@ input{
 	width: 100%;
 	
 }
+
 #info{
-	 background-image: url("kids.jpg");
+	background-image: url("kids.jpg");
 }
 
 #texto{
@@ -62,7 +80,25 @@ input{
 }
 
 #tes{
-	font-family: Century Gothic;
-	font-size:100;
+	position: absolute;
+	font-family: Alata;
+	font-size: 100px;
 	text-align: left;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-image: url('_imagens/kids2q.jpg');
+	height: 100%;
+	background-size: 100%; 
+}
+
+section {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
 }
