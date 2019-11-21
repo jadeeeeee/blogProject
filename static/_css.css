@@ -28,7 +28,16 @@ input{
 	margin-right: 10px;
 	font-size: 35px;
 	font-weight: 10;
+	transition-duration: 0.5s;
+	border-bottom: 1px solid #000000;
 }
+
+.links:hover {
+	transition-duration: 0.5s;
+	border-bottom: 1px solid #000000;
+	border-bottom-width: 5px;
+}
+
 #titulo_sobre {
 	font-family: Alata;
 	font-weight: 10;
@@ -74,6 +83,7 @@ input{
 	color: lightgrey;
 	
 }
+
 .ei{
 	text-align: center;
 	font-family: Century Gothic; 
@@ -84,6 +94,10 @@ input{
 	font-family: Alata;
 	font-size: 100px;
 	text-align: left;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	left: 15%;
+	border-bottom: #000000 4px solid;
 }
 
 header {
@@ -93,7 +107,7 @@ header {
 	left: 0;
 	background-image: url('_imagens/kids2q.jpg');
 	height: 100%;
-	background-size: 100%; 
+	background-size: 100%;
 }
 
 section {
