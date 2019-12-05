@@ -1,6 +1,5 @@
 h1{
 	text-align: center;
-	font-family: Century Gothic;
 	font-size: 30;
 }
 
@@ -10,7 +9,7 @@ h1{
 }
 
 body{
-	font-family: Century Gothic;
+	font-family: Alata;
 }
 
 input{
@@ -28,20 +27,24 @@ input{
 	margin-right: 10px;
 	font-size: 35px;
 	font-weight: 10;
-	transition-duration: 0.5s;
-	border-bottom: 1px solid #000000;
+	transition-duration: 0.25s;
 }
 
 .links:hover {
-	transition-duration: 0.5s;
-	border-bottom: 1px solid #000000;
-	border-bottom-width: 5px;
+	transition-duration: 0.25s;
+	border-bottom: 2px solid #000000;
 }
 
 #titulo_sobre {
 	font-family: Alata;
 	font-weight: 10;
 	font-size: 30px;
+}
+
+#text_sobre {
+	margin-left: 100px;
+	margin-right: 100px;
+
 }
 
 #cabecalho{
@@ -52,7 +55,6 @@ input{
 #menu{
 	height: 10%;
 	width: 100%;
-	font-family: Century Gothic;
 	font-size: 30;
 }
 
@@ -69,7 +71,12 @@ input{
 }
 
 #info{
-	background-image: url("kids.jpg");
+	background-image: url("../_imagens/kids.jpg");
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
 }
 
 #texto{
@@ -80,13 +87,12 @@ input{
 	height: 10%;
 	width: 100%;
 	clear: both;
-	color: lightgrey;
+	color: #aaa;
 	
 }
 
 .ei{
 	text-align: center;
-	font-family: Century Gothic; 
 }
 
 #tes{
@@ -105,7 +111,7 @@ header {
 	top: 0;
 	right: 0;
 	left: 0;
-	background-image: url('_imagens/kids2q.jpg');
+	background-image: url('../_imagens/kids2q.jpg');
 	height: 100%;
 	background-size: 100%;
 }
