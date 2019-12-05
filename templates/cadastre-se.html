@@ -1,41 +1,47 @@
-<html>
-	<head>
-		<meta charset = "UTF-8"/>
-		<title> Cadastre-se </title>
-		<link  type="text/css" rel="stylesheet" href="../static/_css.css" />
-		<script src = "../_javascript/_javascript.js"></script>
-		<link rel="shortcut icon" href="../_imagens/livro3.png" >
+{% extends 'base.html' %}
+
+{% block titulo %}CADASTRO{% endblock titulo %}
+
+{% block conteudo %}
+
+<div id="cabecalho">
+	<a href ="/" ><img src = "../static/_imagens/tit.png"/></a>
+</div>
+
+<h1> Cadastre-se </h1>
+
+<center>
+
+	<div class="bordinha">
 		
+		<div>
+
+			<h3> Insira aqui seus dados: </h3>
+			
+			<form method="POST">            
 		
-	</head>
-	<body>
-		<div id="cabecalho">
-			<a href ="/" ><img src = "../static/_imagens/tit.png"/></a>
+				{{ form.hidden_tag() }}
+	
+				{{form.usuario.label}} <br/> {{form.usuario}} <br/>
+				{{form.sobrenome.label}} <br/> {{form.sobrenome}} <br/>
+				{{form.idade.label}} <br/> {{form.idade}} <br/>
+				{{form.email.label}} <br/> {{form.email}} <br/>
+				{{form.senha.label}} <br/> {{form.senha}} <br/>
+				{{form.rua.label}} <br/> {{form.rua}} <br/>
+				{{form.numero.label}} <br/> {{form.numero}} <br/>
+				{{form.bairro.label}} <br/> {{form.bairro}} <br/>
+				{{form.cep.label}} <br/> {{form.cep}} <br/>
+				<br/> {{form.botao}} <br/><br/>
+				
+			</form>
+
 		</div>
-		<h1> Cadastre-se </h1>
-			<center>
-			<div class="bordinha">
-			<div>
-				<form name="form" method="post" action="../index.html" onSubmit="return validacao()">            
-					<h3> Insira aqui seus dados: </h3>
-					<table> 
-					<tr> <td> <label> Usuário: </label> </td> <td> <input  type="text" name="nome" /> </td> </tr>
-					<tr> <td> Sobrenome:</td> <td> <input type="text" name="sobrenome"/> </td> </tr>
-					<tr> <td> Idade:</td> <td> <input type="number" name="idade"/> </td> </tr>
-					<tr> <td> <label> E-mail: </label> </td> <td> <input  type="email" name="email" /> </td> </tr> 
-					<tr> <td> <label> Senha: </label> </td> <td> <input  type="password" name="senha" /> </td> </tr>
-					<tr><td> </br> <b> Endereço </b> </td></tr>
-					<tr> <td> Rua:</td> <td> <input type="text" name="rua"/> </td> </tr>
-					<tr> <td> Número:</td> <td> <input type="number" name="numero"/> </td> </tr>
-					<tr> <td> Bairro:</td> <td> <input type="text" name="bairro"/> </td> </tr>
-					<tr> <td> CEP:</td> <td> <input type="number" name="cep"/> </td> </tr>
-					</table> 
-					<input type="submit" value="Cadastrar"/>
-				</form>
-				</div>
-			</div>
-			</center>
-			</br>
-			<p class="ei"> Já é cadastrado? Faça <a href ="/login">login.</a> </p>
-		</body>
-	</html >
+
+	</div>
+
+</center>
+			
+</br>
+<p class="ei"> Já é cadastrado? Faça <a href ="/login">login.</a> </p>
+
+{% endblock conteudo %} 

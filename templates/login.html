@@ -1,30 +1,35 @@
-<html>
-	<head>
-		<meta charset = "UTF-8"/>
-		<title> Faça Login </title>
-		<link  type="text/css" rel="stylesheet" href="../static/_css.css" />
-		<script src = "../_javascript/_javascript.js"></script>
-		<link rel="shortcut icon" href="../static/_imagens/livro3.png"/>
+{% extends 'base.html' %}
+
+{% block titulo %}LOGIN{% endblock titulo %}
+
+{% block conteudo %}
+
+<div id="cabecalho">
+	<a href ="/index" ><img src = "../static/_imagens/tit.png"/></a>		
+</div>
+
+</br></br>
+
+<center>
+
+	<div class="bordinha">
+
+		<form method="GET">
 		
-	</head>
-	<body>
-		<div id="cabecalho">
-			<a href ="index.html" ><img src = "../static/_imagens/tit.png"/></a>
-		</div> </br> </br>
-		<center>
-			<div class="bordinha">
-					<form name="form" method="post" action="../index.html" onSubmit="return login ()">
-					<h1> Já é cadastrado? Faça seu login: </h1>
-					<table> 
-					<tr> <td> <label> E-mail: </label> </td> <td> <input  type="email" name="email" /> </td> </tr>
-					<tr> <td> <label> Senha: </label> </td> <td> <input  type="password" name="senha" />  </td> </tr>
-					</table>
-					<input type="submit" value=" Entrar "/>
-					</form>
-			</div> </br>
-			<p class="ei"> Ou <a href ="cadastre-se.html" target="blank" >cadastre-se.</a></p>
-		</center>
+			<h1> Já é cadastrado? Faça seu login: </h1>
+		
+			{{form.email.label}} <br/> {{form.email}} <br/>
+			{{form.senha.label}} <br/> {{form.senha}} <br/>
+			<br/> {{form.botao}} <br/><br/>
+		
+		</form>
+		
+	</div> </br>
+	
+	<p class="ei"> Ou <a href ="/cadastro" target="blank" >cadastre-se.</a></p>
+
+</center>
 			
-	</body>
-</html>
-<!--input type="button" id="showPassword" value="Mostrar" class="button" /--!>
+<!-- input type="button" id="showPassword" value="Mostrar" class="button"/ -->
+
+{% endblock conteudo %} 
